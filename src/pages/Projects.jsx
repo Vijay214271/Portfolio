@@ -12,27 +12,27 @@ const projectData = [
     name: 'Smart Expense Tracker',
     github: 'https://github.com/Vijay214271/smart-expense-tracker',
     images: [
-      '/images/expense-tracker-dashboard.png',
-      '/images/expense-tracker-report.png',
-      '/images/expense-tracker-form.png',
+      `${import.meta.env.BASE_URL}/images/expense-tracker-dashboard.png`,
+      `${import.meta.env.BASE_URL}/images/expense-tracker-report.png`,
+      `${import.meta.env.BASE_URL}/images/expense-tracker-form.png`,
     ],
   },
   {
     name: 'URL Shortener with Analytics',
     github: 'https://github.com/Vijay214271/url-shortener-analytics',
     images: [
-      '/images/url-shortener-landing.png',
-      '/images/url-shortener-dashboard.PNG',
-      '/images/url-shortener-stats.png',
-      '/images/url-shortener-create.png',
+      `${import.meta.env.BASE_URL}/images/url-shortener-landing.png`,
+      `${import.meta.env.BASE_URL}/images/url-shortener-dashboard.PNG`,
+      `${import.meta.env.BASE_URL}/images/url-shortener-stats.png`,
+      `${import.meta.env.BASE_URL}/images/url-shortener-create.png`,
     ],
   },
   {
     name: 'Headline CMS Project',
     github: 'https://github.com/Vijay214271/react-frontend',
     images: [
-      '/images/headline-cms-dashboard.png',
-      '/images/headline-cms-form.png',
+      `${import.meta.env.BASE_URL}/images/headline-cms-dashboard.png`,
+      `${import.meta.env.BASE_URL}/images/headline-cms-form.png`,
     ],
   },
 ];

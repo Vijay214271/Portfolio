@@ -34,10 +34,9 @@ const Home = () => (
         {/* Image Section */}
         <div className="col-md-6 image-section d-flex justify-content-center">
           <img
-            src="/images/Vija.png"
+            src={`${import.meta.env.BASE_URL}/images/Vija.png`}
             alt="Patnala Vijaya Kumar"
-            className="img-fluid profile-hero-img"
-          />
+            className="img-fluid profile-hero-img"/>
         </div>
       </div>
     </div>
