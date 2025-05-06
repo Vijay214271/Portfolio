@@ -1,0 +1,103 @@
+/* Main Section Styling */
+.technologies {
+  background-color: #222;
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Section Heading */
+.technologies h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #0ff; /* Bright cyan color for the heading */
+}
+
+/* Section Description */
+.technologies p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 20px auto;
+  color: #ccc;
+}
+
+/* Container for Tech Categories */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Individual Technology Category Styling */
+.tech-category {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+}
+
+/* Hover effect to raise the category card */
+.tech-category:hover {
+  transform: translateY(-5px);
+}
+
+/* Category Heading */
+.tech-category h3 {
+  font-size: 1.8rem;
+  color: #0ff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Styling for Unordered Lists (Tech items) */
+.tech-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for each item in the tech category list */
+.tech-category ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .tech-category {
+    width: 100%; /* Stack tech categories vertically */
+  }
+
+  /* Adjust Section Description Font Size for Mobile */
+  .technologies p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media screen and (max-width: 480px) {
+  .technologies h2 {
+    font-size: 2rem; /* Adjust for smaller screens */
+  }
+
+  .tech-category {
+    padding: 15px; /* Slightly smaller padding on mobile */
+  }
+
+  .tech-category h3 {
+    font-size: 1.6rem; /* Smaller headings on mobile */
+  }
+
+  .tech-category ul li {
+    font-size: 1rem; /* Smaller text for list items */
+  }
+}

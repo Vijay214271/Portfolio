@@ -1,0 +1,221 @@
+/* General Styling for Section */
+.section.projects {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+  margin-bottom: 2rem;
+}
+
+.tab-buttons button {
+  margin: 0 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.tab-buttons button.active {
+  background-color: #0e6e55;
+  color: white;
+}
+
+/* Project Grid */
+.projects-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Project Card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+  overflow: hidden; /* Ensure no overflow in card */
+}
+
+/* Image Styling */
+.project-card img {
+  width: 100%;
+  height: auto; /* Adjust height automatically based on aspect ratio */
+  max-height: 480px; /* Maximum height for consistency */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Project Name Styling */
+.project-card p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Backend Projects */
+.backend-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.backend-card {
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.backend-card a {
+  color: #0e6e55;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Projects Slider */
+.projects-slider {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* Swiper Image Styling */
+.inner-slider .swiper-slide img {
+  width: 100%;
+  height: auto; /* Auto height to maintain aspect ratio */
+  max-height: 480px; /* Set a max height to avoid overflow */
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Project Name Link Styling */
+.project-name-link {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #0e6e55;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Ensure Inner Slider Styling */
+.project-card .inner-slider {
+  width: 100%;
+  max-width: 850px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  /* Hide Swiper navigation arrows on mobile/tablet */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important; /* Hide arrows */
+  }
+
+  /* Tab Buttons */
+  .tab-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-buttons button {
+    margin-bottom: 10px;
+  }
+
+  /* Project Card */
+  .project-card {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  /* Image Styling */
+  .project-card img {
+    height: auto;
+    max-height: 350px; /* Adjust max height for smaller screens */
+  }
+
+  /* Project Grid */
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Backend Cards */
+  .backend-card {
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust for smaller screens */
+  .project-card img {
+    max-height: 300px; /* Adjust max height for small screens */
+  }
+
+  /* Project Card */
+  .project-card p {
+    font-size: 1rem;
+  }
+
+  /* Backend Cards */
+  .backend-card {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+  }
+}
+
+/* Ensure consistent min-height so layout doesn't jump */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects .tab-buttons {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects-slider,
+.backend-projects {
+  min-height: 600px; /* same height to prevent layout shift */
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Ensure section title stays at top with buttons */
+.section.projects .section-title {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,49 @@
+/* About.css */
+.about {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .about-img-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .about-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .about-tech ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-tech ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0ff;
+  }
+  
+  .about-tech h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0ff;
+  }
+  

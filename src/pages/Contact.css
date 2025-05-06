@@ -1,0 +1,146 @@
+/* Container split layout */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Left side: Form */
+  .contact-form-container {
+    flex: 1 1 45%; /* Adjust the size of the form container */
+    max-width: 500px; /* Ensure it doesn't stretch too wide */
+  }
+  
+  .contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #6e7dff;
+    box-shadow: 0 0 5px rgba(110, 125, 255, 0.5);
+  }
+  
+  .contact-form button {
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: bold;
+    background-color: #6e7dff;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-form button:hover {
+    background-color: #4e73df;
+    transform: translateY(-3px);
+  }
+  
+  /* Right side: Contact Info */
+  .contact-info {
+    flex: 1 1 45%; /* Adjust the size of the contact-info */
+    max-width: 450px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    color: #4e73df;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  
+  .contact-info a {
+    color: #4e73df;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .contact {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px; /* Reduces space between sections */
+      padding: 40px 10px;  /* Less padding on smaller screens */
+    }
+  
+    .contact-info,
+    .contact-form-container {
+      max-width: 100%; /* Take full width on small screens */
+      text-align: center;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .contact-form button {
+      font-size: 0.9rem;
+      padding: 10px 25px;
+    }
+  }
+  .status-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .status-message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .status-message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+  .contact-form {
+    margin-bottom: 0; /* Avoid extra spacing below the form */
+  }
+  
+  .contact-form-container form {
+    margin-bottom: 0;
+  }
+  
+  .contact-info p:last-child {
+    margin-bottom: 0; /* Remove extra spacing under location */
+  }
+  
+  .contact-info {
+    margin-bottom: 0;
+  }
+  
